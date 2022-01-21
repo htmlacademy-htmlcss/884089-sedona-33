@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="navigation">
-          <img class="logo" src="" alt="Логотип Седона">
+          <img class="navigation__logo" src="" alt="Логотип Седона.">
           <ul class="navigation__list">
               <li class="navigation__item">
                   <a class="navigation__link" href="#">Главная</a>
@@ -19,16 +19,15 @@
                   <a class="navigation__link" href="#">Гостиницы</a>
               </li>
           </ul>
-
           <ul class="navigation-list navigation-user">
               <li class="navigation__item">
                   <a class="navigation__link" href="#">
-                      <span class="visually-hidden">Поиск</span>
+                      <span class="visually-hidden">Поиск.</span>
                   </a>
               </li>
               <li class="navigation__item">
                   <a class="navigation__link" href="#">
-                      <span class="visually-hidden">О Седоне</span>
+                      <span class="visually-hidden">Избраное.</span>
                   </a>
               </li>
               <li class="navigation__item">
@@ -40,21 +39,21 @@
       </nav>
     </header>
     <main class="main-index">
-      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне</h1>
+      <h1 class="visually-hidden">Седона - небольшой городок в Аризоне.</h1>
       <section class="poster">
           <img class="poster__logo" src="" alt="Логотип приветствия в Седона">
           <h2 class="poster__title">Седона — небольшой городок в Аризоне,<br>
-              заслуживающий большего!</h2>
+            заслуживающий большего!</h2>
           <p class="poster__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
-      <section class="advantages"><!--грид блок-->
-          <h2 class="visually-hidden">Преимущества</h2>
+      <section class="advantages"><!-- будет грид блок-->
+          <h2 class="visually-hidden">Преимущества.</h2>
           <ul class="advantages__list">
               <li class="advatages__item">
                   <h3 class="advantages__title">Настоящий городок</h3>
                   <span class="advantages__numb">— №1 —</span>
                   <p class="advantages__description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-                  <img src="" alt="Дома с флагами США, перед ними кроны зеленых деревьев">
+                  <img class="advantages__foto" src="" alt="Фотография домов с флагами США, перед ними кроны зеленых деревьев.">
               </li>
               <li class="advatages__item">
                   <h3 class="advantages__title">Жильё</h3>
@@ -69,6 +68,7 @@
                   <p class="advantages__description">Не только китайского, но и настоящего местного производства!</p>
               </li>
               <li class="advatages__item">
+                  <img class="advantages__foto" src="" alt="Фотография естественного моста из гор над пропастью.">
                   <h3 class="advantages__title">Там есть мост дьявола</h3>
                   <span class="advantages__numb">— №2 —</span>
                   <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -98,20 +98,28 @@
       <section class="subscription">
         <h2 class="subscription__title">Подпишитесь на рассылку</h2>
         <p class="subscription__description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="subscription__form" action="">
-          <input type="email" name="" id="" placeholder="Ваш e-mail">
+        <form class="subscription__form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" name="e-mail" id="e-mail" placeholder="Ваш e-mail">
           <button class="subscription__btn" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="main-footer">
       <article class="socials">
-        <a href="#">socials-twitter</a>
-        <a href="#">socials-facebook</a>
-        <a href="#">socials-youtube</a>
+        <a class="socials__link" href="https://www.facebook.com/htmlacademy">
+          <span class="visually-hidden">twitter.</span>
+        </a>
+        <a class="socials__link" href="https://twitter.com/htmlacademy_ru">
+          <span class="visually-hidden">facebook.</span>
+        </a>
+        <a class="socials__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <span class="visually-hidden">youtube.</span>
+        </a>
       </article>
-      <span>+7 (812) 812-12-12</span>
-      <a class="copyright-link" href="#">htmlacademy</a>
+      <a href="tel:+78121212">
+        <span>+7 (812) 812-12-12</span>
+      </a>
+      <a class="copyright-link" href="https://htmlacademy.ru/">htmlacademy</a>
     </footer>
  </body>
 </html>
