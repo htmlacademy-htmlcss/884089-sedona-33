@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "PT Sans";
+  src:url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-style: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Затычка под иконки */
+
+.time__icon {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.navigation__list,
+.navigation-user,
+.advantages__list,
+.socials__list {
+  list-style: none;
+}
+
+/* top navigartion */
+
+.navigation__list {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.navigation__list .navigation__link,
+.contacts__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-user .navigation__link {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.poster .container {
+  background-image: url("/images/bg-fone/index-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+}
+
+.offer .container {
+  text-align: center;
+}
+
+.subscription .container {
+  background-image: url("/images/bg-fone/background.jpg");
+  background-repeat: no-repeat;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.filter .container {
+  background-image: url("/images/bg-fone/catalog-background.jpg");
+  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* title */
+
+.poster__title,
+.offer__title,
+.subscription__title {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.subscription__title {
+  color: #ffffff;
+}
+
+.advantages__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+
