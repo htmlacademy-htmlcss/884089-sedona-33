@@ -47,6 +47,13 @@ img {
   max-width: 100%;
 }
 
+/* Затычка под иконки */
+
+.time__icon {
+  background-color: #000000;
+  color: #ffffff;
+}
+
 .navigation__list,
 .navigation-user,
 .advantages__list,
@@ -79,6 +86,8 @@ img {
 .poster .container {
   background-image: url("/images/bg-fone/index-background.jpg");
   background-repeat: no-repeat;
+  background-color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -90,11 +99,15 @@ img {
   background-image: url("/images/bg-fone/background.jpg");
   background-repeat: no-repeat;
   text-align: center;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 .filter .container {
   background-image: url("/images/bg-fone/catalog-background.jpg");
   background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 /* title */
