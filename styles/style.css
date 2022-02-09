@@ -95,6 +95,11 @@ img {
 
 /* top navigartion */
 
+.navigation__logo__link {
+  display: block;
+  margin-right: 30px;
+}
+
 .navigation__list {
   width: 450px;
   font-weight: 700;
