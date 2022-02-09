@@ -192,7 +192,7 @@ img {
   color: #000000;
 }
 
-.filter .container {
+.filter {
   background-image: url("/images/bg-fone/catalog-background.jpg");
   background-position: center;
   background-size: cover;
@@ -202,6 +202,14 @@ img {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.filter .container,
+.sort .container,
+.catalog .container,
+.pagination .container {
+  margin: 0 auto;
+  width: 1060px;
 }
 
 /* title */
@@ -465,4 +473,17 @@ select {
 .main-footer .wrapper:last-child {
   min-width: 120px;
   margin-left: auto;
+}
+
+.filter__hotels {
+  display: flex;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__card {
+  width: 340px;
 }
