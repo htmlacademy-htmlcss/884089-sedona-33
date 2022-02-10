@@ -94,6 +94,9 @@ ul {
 /* top navigation */
 
 .navigation__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 450px;
   font-weight: 700;
   font-size: 20px;
@@ -116,6 +119,7 @@ ul {
 .contacts__link {
   text-decoration: none;
   color: #000000;
+  display: block;
 }
 
 .navigation-user .navigation__link {
@@ -155,6 +159,8 @@ ul {
 
 .advantages__undelist .advatages__item {
   width: 400px;
+  padding-block-start: 184px;
+  min-height: 384px;
 }
 
 .advatages__item:first-child,
@@ -188,14 +194,19 @@ ul {
 
 .poster__logo {
   margin-bottom: 145px;
+  padding-block-start: 80px;
 }
 
 .poster .wrapper {
   background-color: #ffffff;
+  padding-block-start: 60px;
+  padding-block-end: 80px;
 }
 
 .offer .container {
   text-align: center;
+  padding-block-start: 90px;
+  padding-block-end: 90px;
 }
 
 .container-subscription {
@@ -205,6 +216,12 @@ ul {
   text-align: center;
   background-color: #000000;
   color: #ffffff;
+  padding-block-start: 95px;
+  padding-block-end: 95px;
+}
+
+.catalog {
+  margin-block-end: 30px;
 }
 
 .catalog-subscription {
@@ -213,16 +230,31 @@ ul {
   color: #333333;
 }
 
+.filter {
+  margin-block-end: 40px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
 .filter .container {
   background-image: url("/images/bg-fone/catalog-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #000000;
-  color: #ffffff;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 23px;
+  padding-block-start: 30px;
+  padding-block-end: 95px;
+}
+
+.sort {
+  margin-block-end: 50px;
+}
+
+.sort .container-inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* title */
@@ -260,6 +292,7 @@ ul {
 }
 
 .filter__title {
+  margin-block-start: 0px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -275,6 +308,21 @@ ul {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
+}
+
+/* description/subscription */
+
+.advantages__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.offer__description,
+.subscription__description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /* button */
@@ -303,6 +351,8 @@ ul {
   color: #ffffff;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
+  padding: 0;
+  margin-inline-start: -5px;
 }
 
 .catalog__btn {
@@ -313,6 +363,9 @@ ul {
   color: #ffffff;
   font-size: 20px;
   line-height: 26px;
+  margin-inline-start: 220px;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
 }
 
 .filter__btn-accept {
@@ -343,6 +396,15 @@ ul {
 
 /* footer-style */
 
+.footer-container {
+  padding-block-start: 40px;
+  padding-block-end: 30px;
+}
+
+.socials__list {
+  display: flex;
+}
+
 .contacts__tel {
   font-weight: 400;
   font-size: 40px;
@@ -371,6 +433,12 @@ select {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  padding: 20px;
+}
+
+.catalog__card:first-child,
+.catalog__card:nth-child(2n) {
+  margin-inline-end: 18px;
 }
 
 .catalog__card__link,
@@ -416,6 +484,18 @@ select {
 }
 
 /* pagination */
+
+.pagination .container-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__list {
+  display: flex;
+  margin-inline-end: auto;
+  min-width: 300px;
+  justify-content: space-between;
+}
 
 .pagination__result {
   font-weight: 400;
@@ -466,6 +546,13 @@ select {
 
 .filter__hotels {
   display: flex;
+  justify-content: space-between;
+}
+
+.filter__hotels .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .catalog__list {
