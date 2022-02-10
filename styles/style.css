@@ -61,8 +61,8 @@ img {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
+  width: 1060px;
 }
 
 /* Затычка под иконки */
@@ -74,14 +74,7 @@ img {
 
 /* resets */
 
-.navigation__list,
-.navigation-user,
-.advantages__list,
-.socials__list,
-.filter__breadcrumbs,
-.filter__hotels__list,
-.catalog__list,
-.pagination__list {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -93,12 +86,7 @@ img {
   margin: 0;
 }
 
-/* top navigartion */
-
-.navigation__logo__link {
-  display: block;
-  margin-right: 30px;
-}
+/* top navigation */
 
 .navigation__list {
   width: 450px;
@@ -110,6 +98,13 @@ img {
 .navigation-user {
   max-width: 280px;
   margin-left: auto;
+}
+
+/* links */
+
+.navigation__logo__link {
+  display: block;
+  margin-right: 30px;
 }
 
 .navigation__list .navigation__link,
@@ -126,11 +121,32 @@ img {
   color: #000000;
 }
 
-.advatages__item {
+.filter__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.pagination__link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
   text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #83B3D3;
+}
+
+.pagination__link--сurrent {
+  background-color: #F2F2F2;
+  color: #000000;
 }
 
 /* style blocks */
+
+.advatages__item {
+  text-align: center;
+}
 
 .advantages__undelist .advatages__item {
   width: 400px;
@@ -156,7 +172,7 @@ img {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.poster .container {
+.poster-container {
   background-image: url("/images/bg-fone/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -204,19 +220,9 @@ img {
   line-height: 23px;
 }
 
-.filter .container,
-.sort .container,
-.catalog .container,
-.pagination .container {
-  margin: 0 auto;
-  width: 1060px;
-}
-
 /* title */
 
-.poster__title,
-.offer__title,
-.subscription__title {
+.general-title {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 30px;
@@ -256,12 +262,6 @@ img {
   line-height: 26px;
 }
 
-.filter__link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-}
-
 .catalog__card__title {
   font-weight: 700;
   font-size: 24px;
@@ -270,27 +270,27 @@ img {
 
 /* button */
 
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+}
+
 .offer__btn {
   background-color: #756257;
   color: #ffffff;
   border-radius: 10px;
   width: 575px;
   height: 60px;
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  border: none;
 }
 
 .subscription__btn {
   width: 200px;
   height: 60px;
-  font-weight: 700;
-  border: none;
   font-size: 20px;
   line-height: 26px;
-  text-transform: uppercase;
   color: #ffffff;
   background: #83B3D3;
   border-radius: 0px 10px 10px 0px;
@@ -301,29 +301,23 @@ img {
   height: 60px;
   background-color: #83B3D3;
   border-radius: 4px;
-  border: none;
-  text-transform: uppercase;
   color: #ffffff;
-  font-weight: 700;
   font-size: 20px;
   line-height: 26px;
 }
 
 .filter__btn-accept {
-  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  text-transform: uppercase;
   width: 160px;
   height: 48px;
   background-color: #83B3D3;
   color: #ffffff;
-  border: none;
 }
 
 .filter__btn-reset {
-  border: none;
   background-color: transparent;
+  text-transform: none;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -332,13 +326,10 @@ img {
 
 .catalog__card__btn {
   background-color: #83B3D3;
-  border: none;
   color: #ffffff;
-  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  text-transform: uppercase;
 }
 
 /* footer-style */
@@ -412,21 +403,6 @@ select {
 }
 
 /* pagination */
-
-.pagination__link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #83B3D3;
-}
-
-.pagination__link--сurrent {
-  background-color: #F2F2F2;
-  color: #000000;
-}
 
 .pagination__result {
   font-weight: 400;
