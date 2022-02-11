@@ -93,12 +93,13 @@ ul {
 
 /* top navigation */
 
-.navigation {
-  max-height: 66px;
+.main-header {
+  margin-block-end: -2px;
 }
 
 .navigation__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 450px;
   font-weight: 700;
@@ -107,7 +108,7 @@ ul {
 }
 
 .navigation-user {
-  max-width: 280px;
+  max-width: 295px;
   margin-left: auto;
 }
 
