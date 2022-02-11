@@ -428,6 +428,7 @@ ul {
 
 .socials__list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .contacts__tel {
@@ -555,7 +556,7 @@ select {
 }
 
 .main-footer .wrapper:first-child {
-  width: 120px;
+  max-width: 165px;
   margin-right: auto;
 }
 
