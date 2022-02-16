@@ -612,16 +612,16 @@ select {
 .catalog__card-grid {
   align-items: center;
   grid-template-rows: 1fr 1fr;
+  row-gap: 16px;
 }
 
 /* catalog elements */
 
-.catalog__card__information {
-  display: flex;
-  justify-content: space-between;
-}
-
+.catalog__card__information,
+.catalog__card__cost,
 .catalog__card__reiting {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
+
