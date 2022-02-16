@@ -141,12 +141,17 @@
               <option value="bigcost">Сначала дешёвые</option>
               <option value="lowcost">Сначала дорогие</option>
             </select>
-            <a href="#" class="sort__btn sort__btn--light">
-              <span class="visually-hidden">Показать список.</span>
-            </a>
-            <a href="#" class="sort__btn">
-              <span class="visually-hidden">Показать карточки.</span>
-            </a>
+            <div class="wrapper">
+              <a href="#" class="sort__btn sort__btn--light">
+                <span class="visually-hidden">Показать карточки.</span>
+              </a>
+              <a href="#" class="sort__btn">
+                <span class="visually-hidden">Показать плитку.</span>
+              </a>
+              <a href="#" class="sort__btn">
+                <span class="visually-hidden">Показать список.</span>
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -161,13 +166,15 @@
                   <span class="catalog__type">Гостиница</span>
                   <span class="catalog__card__price">От 4000 ₽</span>
                 </a>
-                <p>
-                  <a class="catalog__card__info" href="#">Подробнее</a>
-                  <button class="btn catalog__card__btn" type="button">В избраное</button>
-                </p>
-                <div class="catalog__card__reiting">
-                  <span class="time__icon">Звёздочка</span>
-                  <span class="catalog__card__numb">Рейтинг: 8,5</span>
+                <div class="grid-container catalog__card-grid">
+                  <p class="catalog__card__information">
+                    <a class="catalog__card__info" href="#">Подробнее</a>
+                    <button class="btn catalog__card__btn" type="button">В избраное</button>
+                  </p>
+                  <div class="catalog__card__reiting">
+                    <span class="time__icon">Звёздочка</span>
+                    <span class="catalog__card__numb">Рейтинг: 8,5</span>
+                  </div>
                 </div>
               </li>
               <li class="catalog__card">
@@ -177,13 +184,15 @@
                   <span class="catalog__type">Гостиница</span>
                   <span class="catalog__card__price">От 3000 ₽</span>
                 </a>
-                <p>
-                  <a class="catalog__card__info" href="#">Подробнее</a>
-                  <button class="btn catalog__card__btn" type="button">В избраное</button>
-                </p>
-                <div class="catalog__card__reiting">
-                  <span class="time__icon">Звёздочка</span>
-                  <span class="catalog__card__numb">Рейтинг: 8,9</span>
+                <div class="grid-container catalog__card-grid">
+                  <p class="catalog__card__information">
+                    <a class="catalog__card__info" href="#">Подробнее</a>
+                    <button class="btn catalog__card__btn" type="button">В избраное</button>
+                  </p>
+                  <div class="catalog__card__reiting">
+                    <span class="time__icon">Звёздочка</span>
+                    <span class="catalog__card__numb">Рейтинг: 8,9</span>
+                  </div>
                 </div>
               </li>
               <li class="catalog__card">
@@ -193,29 +202,33 @@
                   <span class="catalog__type">Гостиница</span>
                   <span class="catalog__card__price catalog__card__price--favorites">От 2000 ₽</span>
                 </a>
-                <p>
-                  <a class="catalog__card__info" href="#">Подробнее</a>
-                  <button class="btn catalog__card__btn" type="button">В избраное</button>
-                </p>
-                <div class="catalog__card__reiting">
-                  <span class="time__icon">Звёздочка</span>
-                  <span class="catalog__card__numb">Рейтинг: 9,2</span>
+                <div class="grid-container catalog__card-grid">
+                  <p class="catalog__card__information">
+                    <a class="catalog__card__info" href="#">Подробнее</a>
+                    <button class="btn catalog__card__btn" type="button">В избраное</button>
+                  </p>
+                  <div class="catalog__card__reiting">
+                    <span class="time__icon">Звёздочка</span>
+                    <span class="catalog__card__numb">Рейтинг: 9,2</span>
+                  </div>
                 </div>
               </li>
-              <li class="catalog__card">
+              <div class="catalog__card">
                 <a href="#" class="catalog__card__link">
                   <img class="catalog__card__image" src="/images/catalog/hotel-4.jpg" width="300" height="206" alt="Фотография отеля">
                   <h3 class="catalog__card__title">GreenTree Inn</h3>
                   <span class="catalog__type">Гостиница</span>
                   <span class="catalog__card__price">От 3000 ₽</span>
                 </a>
-                <p>
-                  <a class="catalog__card__info" href="#">Подробнее</a>
-                  <button class="btn catalog__card__btn" type="button">В избраное</button>
-                </p>
-                <div class="catalog__card__reiting">
-                  <span class="time__icon">Звёздочка</span>
-                  <span class="catalog__card__numb">Рейтинг: 9,2</span>
+                <div class="grid-container catalog__card-grid">
+                  <p class="catalog__card__information">
+                    <a class="catalog__card__info" href="#">Подробнее</a>
+                    <button class="btn catalog__card__btn" type="button">В избраное</button>
+                  </p>
+                  <div class="catalog__card__reiting">
+                    <span class="time__icon">Звёздочка</span>
+                    <span class="catalog__card__numb">Рейтинг: 9,2</span>
+                  </div>
                 </div>
               </li>
             </ul>
