@@ -65,6 +65,10 @@ img {
   width: 1200px;
 }
 
+.grid-container {
+  display: grid;
+}
+
 .container-inner {
   margin: 0 auto;
   width: 1060px;
@@ -162,6 +166,9 @@ ul {
   text-decoration: none;
   color: #ffffff;
   background-color: #83B3D3;
+  display: block;
+  padding: 15px;
+  border-radius: 4px;
 }
 
 .pagination__link--сurrent {
@@ -271,8 +278,13 @@ ul {
 }
 
 .sort .container-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 160px;
+}
+
+.sort .wrapper {
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
 }
 
 /* title */
@@ -411,6 +423,13 @@ ul {
   line-height: 23px;
 }
 
+.sort__btn {
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-color: #000000;
+}
+
 .catalog__card__btn {
   background-color: #83B3D3;
   color: #ffffff;
@@ -446,6 +465,7 @@ select {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin-inline-end: 80px;
 }
 
 .sort-result,
@@ -460,11 +480,6 @@ select {
   font-size: 18px;
   line-height: 23px;
   padding: 20px;
-}
-
-.catalog__card:first-child,
-.catalog__card:nth-child(2n) {
-  margin-inline-end: 18px;
 }
 
 .catalog__card__link,
@@ -512,15 +527,25 @@ select {
 /* pagination */
 
 .pagination .container-inner {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  align-items: center;
+}
+
+.pagination .wrapper {
+  justify-self: end;
+}
+
+.pagination select {
+  margin: 0;
+  width: 160px;
 }
 
 .pagination__list {
   display: flex;
   margin-inline-end: auto;
   min-width: 300px;
-  justify-content: space-between;
+  gap: 8px;
 }
 
 .pagination__result {
@@ -528,6 +553,14 @@ select {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+  margin-inline-end: 50px;
+}
+
+.pagination__item {
+  width: 55px;
+  height: 55px;
+  background-color: #83B3D3;
+  border-radius: 4px;
 }
 
 /* flex-block */
@@ -582,10 +615,30 @@ select {
 }
 
 .catalog__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 18px;
 }
 
 .catalog__card {
   width: 340px;
 }
+
+/* grid element */
+
+.catalog__card-grid {
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 16px;
+}
+
+/* catalog elements */
+
+.catalog__card__information,
+.catalog__card__cost,
+.catalog__card__reiting {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
