@@ -168,6 +168,7 @@ ul {
   background-color: #83B3D3;
   display: block;
   padding: 15px;
+  border-radius: 4px;
 }
 
 .pagination__link--сurrent {
