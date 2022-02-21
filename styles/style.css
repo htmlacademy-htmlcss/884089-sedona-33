@@ -634,7 +634,19 @@ select {
 
 /* catalog elements */
 
-.product-style {
+.catalog__card-reiting {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.catalog__card-cost {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.catalog__card-information {
   display: flex;
   justify-content: space-between;
   margin: 0;
