@@ -336,7 +336,7 @@ ul {
   line-height: 26px;
 }
 
-.catalog__card__title {
+.catalog__card-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
@@ -430,7 +430,7 @@ ul {
   background-color: #000000;
 }
 
-.catalog__card__btn {
+.catalog__card-btn {
   background-color: #83B3D3;
   color: #ffffff;
   font-size: 16px;
@@ -482,18 +482,18 @@ select {
   padding: 20px;
 }
 
-.catalog__card__link,
-.catalog__card__info {
+.catalog__card-link,
+.catalog__card-info {
   text-decoration: none;
   color: #000000;
 }
 
-.catalog__type,
-.catalog__card__price {
+.catalog__card-type,
+.catalog__card-price {
   color: #333333;
 }
 
-.catalog__card__info {
+.catalog__card-info {
   background-color: #756257;
   color: #ffffff;
   text-align: center;
@@ -503,7 +503,7 @@ select {
   text-transform: uppercase;
 }
 
-.catalog__card__numb {
+.catalog__card-numb {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -634,9 +634,7 @@ select {
 
 /* catalog elements */
 
-.catalog__card__information,
-.catalog__card__cost,
-.catalog__card__reiting {
+.product-style {
   display: flex;
   justify-content: space-between;
   margin: 0;
