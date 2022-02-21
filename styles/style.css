@@ -634,7 +634,7 @@ select {
 
 /* catalog elements */
 
-.catalog__card-reiting {
+.catalog__card-rating {
   display: flex;
   justify-content: space-between;
   margin: 0;
