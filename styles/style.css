@@ -218,6 +218,24 @@ ul {
   color: #ffffff;
 }
 
+.advatages__item-live {
+  background-image: url(../images/svg-general/home.svg);
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
+
+.advatages__item-road {
+  background-image: url(../images/svg-general/eat.svg);
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
+
+.advatages__item-tourist {
+  background-image: url(../images/svg-general/present.svg);
+  background-repeat: no-repeat;
+  background-position: center 90px;
+}
+
 .advantages__undelist .advatages__item:first-child,
 .advantages__undelist .advatages__item:nth-child(3) {
   color: #333333;
@@ -239,11 +257,11 @@ ul {
   background-color: #ffffff;
   background-position: center;
   text-align: center;
+  padding-block-start: 80px;
 }
 
 .poster__logo {
   margin-bottom: 145px;
-  padding-block-start: 80px;
 }
 
 .poster .wrapper {
