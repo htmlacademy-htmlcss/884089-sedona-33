@@ -485,11 +485,18 @@ ul {
 .footer-container {
   padding-block-start: 40px;
   padding-block-end: 30px;
+  padding-inline-start: 70px;
+  padding-inline-end: 70px
 }
 
 .socials__list {
   display: flex;
   flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.social__item + .social__item {
+  margin-inline-end: 30px;
 }
 
 .contacts__tel {
@@ -560,6 +567,7 @@ select {
   vertical-align: bottom;
   border-radius: 10px 0px 0px 10px;
   border: none;
+  padding-inline-start: 20px;
 }
 
 .catalog-subscription input[type="email"] {
@@ -631,8 +639,9 @@ select {
 }
 
 .main-footer .wrapper:first-child {
-  max-width: 165px;
-  margin-right: auto;
+  min-width: 110px;
+  margin-right: 61px;
+  align-self: center;
 }
 
 .main-footer .wrapper:nth-child(2) {
