@@ -495,8 +495,8 @@ ul {
   align-items: baseline;
 }
 
-.social__item + .social__item {
-  margin-inline-end: 30px;
+.socials__item + .socials__item {
+  margin-inline-start: 30px;
 }
 
 .contacts__tel {
@@ -640,7 +640,7 @@ select {
 
 .main-footer .wrapper:first-child {
   min-width: 110px;
-  margin-right: 61px;
+  margin-inline-end: 61px;
   align-self: center;
 }
 
