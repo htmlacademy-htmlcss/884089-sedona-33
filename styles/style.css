@@ -356,7 +356,7 @@ fill: #756257;
 }
 
 .poster-container {
-  background-image: url("/images/bg-fone/index-background.jpg");
+  background-image: url("../images/bg-fone/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ffffff;
@@ -382,7 +382,7 @@ fill: #756257;
 }
 
 .container-subscription {
-  background-image: url("/images/bg-fone/background.jpg");
+  background-image: url("../images/bg-fone/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
@@ -411,7 +411,7 @@ fill: #756257;
 }
 
 .filter .container {
-  background-image: url("/images/bg-fone/catalog-background.jpg");
+  background-image: url("../images/bg-fone/catalog-background.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
