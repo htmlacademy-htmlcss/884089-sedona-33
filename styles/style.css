@@ -144,8 +144,12 @@ ul {
   display: flex;
 }
 
-.filter__item:first-child {
-  padding-inline-end: 25px;
+.filter__item + .filter__item {
+  margin-inline-start: 25px;
+}
+
+.filter__icon {
+  fill: #ffffff;
 }
 
 /* links */
@@ -177,7 +181,7 @@ ul {
 }
 
 .contacts__link:active .contacts__tel {
-  rgba(255, 255, 255, 0.3) 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .contacts__link:focus {
@@ -198,7 +202,7 @@ ul {
 }
 
 .navigation__list .navigation__link:active {
-  rgba(255, 255, 255, 0.3) 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .navigation__icon:active {
@@ -217,6 +221,36 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  text-decoration: none;
+  color: #ffffff  ;
+  padding: 3px 3px;
+}
+
+.filter__link:hover {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.filter__link:hover .filter__icon {
+  fill:rgba(255, 255, 255, 0.6);
+}
+
+.filter__link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter__link:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.filter__link:active .filter__icon{
+  fill:rgba(255, 255, 255, 0.3);
+}
+
+.filter__link:nth-child(1)::after{
+  position: absolute;
+  left: 133px;
+  content: url(../images/svg-general/arrow-link.svg);
 }
 
 .pagination__link {
@@ -249,7 +283,7 @@ ul {
 }
 
 .pagination__link:active {
-  rgba(255, 255, 255, 0.3) 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
   background-color: #68a2ca;
 }
 
@@ -639,6 +673,20 @@ fill: #756257;
   margin-block-end: 20px;
 }
 
+.filter__btn-accept:hover {
+  background-color: #68A2CA;
+}
+
+.filter__btn-accept:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #ffffff;
+}
+
+.filter__btn-accept:active {
+  background-color: #68A2CA;
+  color:rgba(255, 255, 255, 0.3);
+}
+
 .filter__btn-reset {
   background-color: transparent;
   text-transform: none;
@@ -646,6 +694,19 @@ fill: #756257;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+}
+
+.filter__btn-reset:hover {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.filter__btn-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter__btn-reset:active {
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .sort__btn {
