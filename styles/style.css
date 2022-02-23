@@ -177,7 +177,7 @@ ul {
 }
 
 .contacts__link:active .contacts__tel {
-  color: rgba(117, 98, 87, 0.3);
+  rgba(255, 255, 255, 0.3) 98, 87, 0.3);
 }
 
 .contacts__link:focus {
@@ -198,7 +198,7 @@ ul {
 }
 
 .navigation__list .navigation__link:active {
-  color: rgba(117, 98, 87, 0.3);
+  rgba(255, 255, 255, 0.3) 98, 87, 0.3);
 }
 
 .navigation__icon:active {
@@ -249,7 +249,7 @@ ul {
 }
 
 .pagination__link:active {
-  color: rgba(117, 98, 87, 0.3);
+  rgba(255, 255, 255, 0.3) 98, 87, 0.3);
   background-color: #68a2ca;
 }
 
@@ -620,7 +620,7 @@ fill: #756257;
 
 .catalog__btn:active {
   background-color: #68a2ca;
-  color: rgba(117, 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .catalog__btn:focus {
@@ -702,6 +702,39 @@ fill: #756257;
   padding-block-end: 10px;
 }
 
+.catalog__card-btn:hover {
+  background-color: #68A2CA;
+}
+
+.catalog__card-btn:focus {
+ outline: 3px solid #756257;
+ background-color: #68A2CA;
+}
+
+.catalog__card-btn:active {
+  background-color: #68A2CA;
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.catalog__card-btn--like {
+  background-color: #7DB54F;
+}
+
+.catalog__card-btn--like:hover {
+  background-color: #6C9E42;
+}
+
+.catalog__card-btn--like:focus {
+  background-color: #6C9E42;
+  outline: 3px solid #756257;
+}
+
+.catalog__card-btn--like:active {
+  background-color: #6C9E42;
+  color:rgba(255, 255, 255, 0.3);
+
+}
+
 /* footer-style */
 
 .footer-container {
@@ -771,6 +804,18 @@ select:active {
   padding: 20px;
 }
 
+.catalog__card-image:hover {
+  opacity: 0.6;
+}
+
+.catalog__card-image:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.catalog__card-image:active {
+  opacity: 0.3;
+}
+
 .catalog__card-link,
 .catalog__card-info {
   text-decoration: none;
@@ -799,6 +844,20 @@ select:active {
   padding-block-start: 10px;
   padding-block-end: 10px;
   width: 133px;
+}
+
+.catalog__card-info:hover{
+  background-color: #615048;
+}
+
+.catalog__card-info:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;;
+}
+
+.catalog__card-info:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog__card-numb {
