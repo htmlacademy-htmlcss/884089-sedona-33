@@ -284,9 +284,26 @@ color: rgba(255, 255, 255, 0.3);
   padding: 12px 15px;
 }
 
+.socials__icon {
+  fill:#83b3d3;
+}
+
+.socials__link:hover .socials__icon {
+  fill: #68a2ca;
+}
+
 .socials__link:focus {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+}
+
+.socials__link:focus .socials__icon {
+  fill: #68a2ca;
+}
+
+.socials__link:active .socials__icon {
+  fill: #68a2ca;
+  opacity: 0.3;
 }
 
 .copyright__link {
