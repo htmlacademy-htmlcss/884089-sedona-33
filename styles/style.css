@@ -237,6 +237,22 @@ ul {
   color: #000000;
 }
 
+
+.pagination__link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination__link:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.pagination__link:active {
+  color: rgba(117, 98, 87, 0.3);
+  background-color: #68a2ca;
+}
+
 .navigation-user .navigation__link-btn {
   text-decoration: none;
   background: #756257;
@@ -627,6 +643,9 @@ fill: #756257;
   background-image: url(../images/svg-sort-icon/mode-tile\ 1.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.sort__btn--current {
   border-color: #000000;
 }
 
@@ -640,6 +659,18 @@ fill: #756257;
   background-image: url(../images/svg-sort-icon/mode-list\ 1.svg);
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.sort__btn:hover {
+  border-color:#83b3d3;
+}
+
+.sort__btn:focus {
+  border-color:#83b3d3;
+}
+
+.sort__btn:active {
+  border-color: #000000;
 }
 
 .catalog__card-btn {
@@ -690,6 +721,23 @@ select {
   line-height: 23px;
   color: #333333;
   margin-inline-end: 80px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+}
+
+select:hover {
+  border: 2px solid #83B3D3;
+}
+
+select:focus {
+  border: 2px solid #83B3D3;
+}
+
+select:active {
+  color: #333333 rgba(117, 98, 87, 0.3);
+  border-color: #e6e6e6;
 }
 
 .sort-result,
