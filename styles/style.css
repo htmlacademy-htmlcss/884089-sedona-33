@@ -140,6 +140,16 @@ ul {
   height: 37px;
 }
 
+/* breadcrumbs */
+
+.filter__breadcrumbs {
+  display: flex;
+}
+
+.filter__item:first-child {
+  padding-inline-end: 25px;
+}
+
 /* links */
 
 .navigation__logo__link {
@@ -594,6 +604,8 @@ fill: #756257;
   height: 48px;
   background-color: #83B3D3;
   color: #ffffff;
+  border-radius: 4px;
+  margin-block-end: 20px;
 }
 
 .filter__btn-reset {
