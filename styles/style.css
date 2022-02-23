@@ -619,7 +619,27 @@ fill: #756257;
   display: block;
   width: 48px;
   height: 48px;
-  background-color: #000000;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.sort__btn-tile {
+  background-image: url(../images/svg-sort-icon/mode-tile\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-color: #000000;
+}
+
+.sort__btn-slide {
+  background-image: url(../images/svg-sort-icon/mode-slideshow\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sort__btn-list {
+  background-image: url(../images/svg-sort-icon/mode-list\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .catalog__card-btn {
