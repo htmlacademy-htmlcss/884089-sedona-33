@@ -594,6 +594,7 @@ fill: #756257;
   height: 60px;
   font-size: 20px;
   line-height: 36px;
+  cursor: pointer;
 }
 
 .offer__btn:hover {
@@ -620,6 +621,7 @@ fill: #756257;
   border-radius: 0px 10px 10px 0px;
   padding: 0;
   margin-inline-start: -5px;
+  cursor: pointer;
 }
 
 .subscription__btn:hover {
@@ -636,6 +638,7 @@ fill: #756257;
 }
 
 .catalog__btn {
+  cursor: pointer;
   width: 619px;
   height: 60px;
   background-color: #83B3D3;
@@ -671,6 +674,7 @@ fill: #756257;
   color: #ffffff;
   border-radius: 4px;
   margin-block-end: 20px;
+  cursor: pointer;
 }
 
 .filter__btn-accept:hover {
@@ -694,6 +698,7 @@ fill: #756257;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
 }
 
 .filter__btn-reset:hover {
@@ -761,6 +766,7 @@ fill: #756257;
   text-align: center;
   padding-block-start: 10px;
   padding-block-end: 10px;
+  cursor: pointer;
 }
 
 .catalog__card-btn:hover {
