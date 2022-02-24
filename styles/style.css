@@ -144,8 +144,12 @@ ul {
   display: flex;
 }
 
-.filter__item:first-child {
-  padding-inline-end: 25px;
+.filter__item + .filter__item {
+  margin-inline-start: 25px;
+}
+
+.filter__icon {
+  fill: #ffffff;
 }
 
 /* links */
@@ -177,7 +181,7 @@ ul {
 }
 
 .contacts__link:active .contacts__tel {
-  color: rgba(117, 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .contacts__link:focus {
@@ -198,7 +202,7 @@ ul {
 }
 
 .navigation__list .navigation__link:active {
-  color: rgba(117, 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .navigation__icon:active {
@@ -217,6 +221,36 @@ ul {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
+  text-decoration: none;
+  color: #ffffff  ;
+  padding: 3px 3px;
+}
+
+.filter__link:hover {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.filter__link:hover .filter__icon {
+  fill:rgba(255, 255, 255, 0.6);
+}
+
+.filter__link:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter__link:active {
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.filter__link:active .filter__icon{
+  fill:rgba(255, 255, 255, 0.3);
+}
+
+.filter__link:nth-child(1)::after{
+  position: absolute;
+  left: 133px;
+  content: url(../images/svg-general/arrow-link.svg);
 }
 
 .pagination__link {
@@ -235,6 +269,22 @@ ul {
 .pagination__link--сurrent {
   background-color: #F2F2F2;
   color: #000000;
+}
+
+
+.pagination__link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination__link:focus {
+  background-color: #68a2ca;
+  outline: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.pagination__link:active {
+  color:rgba(255, 255, 255, 0.3);
+  background-color: #68a2ca;
 }
 
 .navigation-user .navigation__link-btn {
@@ -268,9 +318,26 @@ color: rgba(255, 255, 255, 0.3);
   padding: 12px 15px;
 }
 
+.socials__icon {
+  fill:#83b3d3;
+}
+
+.socials__link:hover .socials__icon {
+  fill: #68a2ca;
+}
+
 .socials__link:focus {
   outline: 3px solid #83B3D3;
   border-radius: 10px;
+}
+
+.socials__link:focus .socials__icon {
+  fill: #68a2ca;
+}
+
+.socials__link:active .socials__icon {
+  fill: #68a2ca;
+  opacity: 0.3;
 }
 
 .copyright__link {
@@ -527,6 +594,7 @@ fill: #756257;
   height: 60px;
   font-size: 20px;
   line-height: 36px;
+  cursor: pointer;
 }
 
 .offer__btn:hover {
@@ -553,6 +621,7 @@ fill: #756257;
   border-radius: 0px 10px 10px 0px;
   padding: 0;
   margin-inline-start: -5px;
+  cursor: pointer;
 }
 
 .subscription__btn:hover {
@@ -569,6 +638,7 @@ fill: #756257;
 }
 
 .catalog__btn {
+  cursor: pointer;
   width: 619px;
   height: 60px;
   background-color: #83B3D3;
@@ -587,7 +657,7 @@ fill: #756257;
 
 .catalog__btn:active {
   background-color: #68a2ca;
-  color: rgba(117, 98, 87, 0.3);
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .catalog__btn:focus {
@@ -604,6 +674,21 @@ fill: #756257;
   color: #ffffff;
   border-radius: 4px;
   margin-block-end: 20px;
+  cursor: pointer;
+}
+
+.filter__btn-accept:hover {
+  background-color: #68A2CA;
+}
+
+.filter__btn-accept:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #ffffff;
+}
+
+.filter__btn-accept:active {
+  background-color: #68A2CA;
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .filter__btn-reset {
@@ -613,13 +698,62 @@ fill: #756257;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  cursor: pointer;
+}
+
+.filter__btn-reset:hover {
+  color:rgba(255, 255, 255, 0.6);
+}
+
+.filter__btn-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.filter__btn-reset:active {
+  color:rgba(255, 255, 255, 0.3);
 }
 
 .sort__btn {
   display: block;
   width: 48px;
   height: 48px;
-  background-color: #000000;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.sort__btn-tile {
+  background-image: url(../images/svg-sort-icon/mode-tile\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sort__btn--current {
+  border-color: #000000;
+}
+
+.sort__btn-slide {
+  background-image: url(../images/svg-sort-icon/mode-slideshow\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sort__btn-list {
+  background-image: url(../images/svg-sort-icon/mode-list\ 1.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.sort__btn:hover {
+  border-color:#83b3d3;
+}
+
+.sort__btn:focus {
+  border-color:#83b3d3;
+}
+
+.sort__btn:active {
+  border-color: #000000;
 }
 
 .catalog__card-btn {
@@ -632,6 +766,40 @@ fill: #756257;
   text-align: center;
   padding-block-start: 10px;
   padding-block-end: 10px;
+  cursor: pointer;
+}
+
+.catalog__card-btn:hover {
+  background-color: #68A2CA;
+}
+
+.catalog__card-btn:focus {
+ outline: 3px solid #756257;
+ background-color: #68A2CA;
+}
+
+.catalog__card-btn:active {
+  background-color: #68A2CA;
+  color:rgba(255, 255, 255, 0.3);
+}
+
+.catalog__card-btn--like {
+  background-color: #7DB54F;
+}
+
+.catalog__card-btn--like:hover {
+  background-color: #6C9E42;
+}
+
+.catalog__card-btn--like:focus {
+  background-color: #6C9E42;
+  outline: 3px solid #756257;
+}
+
+.catalog__card-btn--like:active {
+  background-color: #6C9E42;
+  color:rgba(255, 255, 255, 0.3);
+
 }
 
 /* footer-style */
@@ -670,6 +838,23 @@ select {
   line-height: 23px;
   color: #333333;
   margin-inline-end: 80px;
+  border: 2px solid #e6e6e6;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 12px 20px;
+}
+
+select:hover {
+  border: 2px solid #83B3D3;
+}
+
+select:focus {
+  border: 2px solid #83B3D3;
+}
+
+select:active {
+  color: #333333 rgba(117, 98, 87, 0.3);
+  border-color: #e6e6e6;
 }
 
 .sort-result,
@@ -684,6 +869,18 @@ select {
   font-size: 18px;
   line-height: 23px;
   padding: 20px;
+}
+
+.catalog__card-image:hover {
+  opacity: 0.6;
+}
+
+.catalog__card-image:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.catalog__card-image:active {
+  opacity: 0.3;
 }
 
 .catalog__card-link,
@@ -714,6 +911,20 @@ select {
   padding-block-start: 10px;
   padding-block-end: 10px;
   width: 133px;
+}
+
+.catalog__card-info:hover{
+  background-color: #615048;
+}
+
+.catalog__card-info:focus {
+  background-color: #615048;
+  outline: 3px solid #83B3D3;;
+}
+
+.catalog__card-info:active {
+  background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog__card-numb {
