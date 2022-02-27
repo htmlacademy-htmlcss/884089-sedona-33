@@ -503,11 +503,22 @@ fill: #756257;
   gap: 8px;
 }
 
-/* filte inputs */
+/* filter inputs */
+
+.filter__hotels__item + .filter__hotels__item {
+  margin-block-start: 13px;
+}
 
 .filter__hotels-group {
   border: none;
 }
+
+.filter__range-views {
+  margin: 0;
+  margin-block-end: 32px;
+}
+
+/* filter range */
 
 .field-control[type="number"] {
 padding-block-start: 15px;
@@ -522,6 +533,51 @@ width: 143px;
 
 .field-control[type="number"]:nth-of-type(2) {
   border-radius: 0 4px 4px 0;
+}
+
+.filter__range-line {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);;
+}
+
+.filter__range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.filter__range-toggle {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  position: absolute;
+  border: none;
+  cursor: pointer;
+}
+
+.min-toggle {
+  top: -8px;
+  left: 0px;
+}
+
+.max-toggle {
+  top: -8px;
+  right: -10px;
+}
+
+.filter__range-toggle:hover {
+  background-color: #d8d7d7;
+}
+
+.filter__range-toggle:active {
+  outline: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.filter__range-toggle:focus {
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
 }
 
 /* title */
@@ -569,6 +625,10 @@ width: 143px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+}
+
+.filter__hotels__title {
+  margin-block-end: 30px;
 }
 
 .filter__hotels__title {
@@ -1079,6 +1139,7 @@ input[type="email"]:focus {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-block-start: 60px;
 }
 
 .catalog__list {
