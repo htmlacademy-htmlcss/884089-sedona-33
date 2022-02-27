@@ -74,16 +74,25 @@
                 <legend class="filter__hotels__title">Инфраструктура:</legend>
                   <ul class="filter__hotels__list">
                     <li class="filter__hotels__item">
-                      <input class="filter__check" type="checkbox" name="swimmingpool" id="swim" checked>
-                      <label class="filter__control" for="swim">Бассейн</label>
+                      <label class="filter__control" for="swim">
+                        <input class="filter__check visually-hidden" type="checkbox" name="swimmingpool" id="swim" checked>
+                        <span class="filter__control-mark"></span>
+                        <span class="filter__control-name">Бассейн</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__check" type="checkbox" name="parking" id="parking" checked>
-                      <label class="filter__control" for="parking">Парковка</label>
+                      <label class="filter__control" for="parking">
+                      <input class="filter__check visually-hidden" type="checkbox" name="parking" id="parking" checked>
+                      <span class="filter__control-mark"></span>
+                      <span class="filter__control-name">Парковка</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__check" type="checkbox" name="wifi" id="wifi">
-                      <label class="filter__control" for="wifi">Wi-Fi</label>
+                      <label class="filter__control" for="wifi">
+                      <input class="filter__check visually-hidden" type="checkbox" name="wifi" id="wifi">
+                      <span class="filter__control-mark"></span>
+                      <span class="filter__control-name">Wi-Fi</span>
+                      </label>
                     </li>
                   </ul>
               </fieldset>
@@ -91,16 +100,25 @@
                 <legend class="filter__hotels__title">Тип жилья:</legend>
                   <ul class="filter__hotels__list">
                     <li class="filter__hotels__item">
-                      <input class="filter__radio" type="radio" name="hotels-group" id="hosting" value="hosting" checked>
-                      <label class="filter__control" for="hosting">Гостиница</label>
+                      <label class="filter__control" for="hosting">
+                      <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="hosting" value="hosting" checked>
+                      <span class="filter__control-mark radio-style"></span>
+                      <span class="filter__control-name">Гостиница</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__radio" type="radio" name="hotels-group" id="motel" value="motel">
-                      <label class="filter__control" for="motel">Мотель</label>
+                      <label class="filter__control" for="motel">
+                      <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="motel" value="motel">
+                      <span class="filter__control-mark radio-style"></span>
+                      <span class="filter__control-name">Мотель</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__radio" type="radio" name="hotels-group" id="apartments" value="apartments">
-                      <label class="filter__control" for="apartments">Апартаменты</label>
+                      <label class="filter__control" for="apartments">
+                      <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="apartments" value="apartments">
+                      <span class="filter__control-mark radio-style"></span>
+                      <span class="filter__control-name">Апартаменты</span>
+                      </label>
                     </li>
                   </ul>
               </fieldset>
@@ -108,8 +126,8 @@
                 <legend class="filter__hotels__title">Стоимость, ₽:</legend>
                   <p class="filter__range-views">
                     <label class="visually-hidden" for="minprice">Минимальная цена</label>
-                    <input class="field-control" type="number" id="minprice" name="min" placeholder="0">
-                    <input class="field-control" type="number" id="maxprice" name="max" placeholder="9000">
+                    <input class="field-control" type="number" id="minprice" name="min" placeholder="0" value="0">
+                    <input class="field-control" type="number" id="maxprice" name="max" placeholder="9000" value="9000">
                     <label class="visually-hidden" for="maxprice">Максимальная цена</label>
                   </p>
                   <div class="filter__range-line">
