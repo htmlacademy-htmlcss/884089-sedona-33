@@ -540,6 +540,24 @@ fill: #756257;
   outline: 3px solid #83B3D3;
 }
 
+.filter__check[type="checkbox"]:checked + .filter__control-mark::before {
+  position: absolute;
+  content:url(../images/svg-general/tick.svg);
+  top: -1px;
+  left: 4px;
+}
+
+.filter__radio[type="radio"]:checked + .filter__control-mark::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  top: 5px;
+  left: 5px;
+}
+
 .filter__hotels-group {
   margin: 0;
   padding: 0;
