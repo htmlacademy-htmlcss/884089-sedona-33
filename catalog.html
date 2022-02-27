@@ -70,7 +70,7 @@
               </ul>
             </header>
             <form class="filter__hotels" action="https://echo.htmlacademy.ru" method="post" oninput="min.value=mincost.value, max.value=maxcost.value">
-              <fieldset class="filter__hotels__group">
+              <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels__title">Инфраструктура:</legend>
                   <ul class="filter__hotels__list">
                     <li class="filter__hotels__item">
@@ -87,7 +87,7 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="filter__hotels__group">
+              <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels__title">Тип жилья:</legend>
                   <ul class="filter__hotels__list">
                     <li class="filter__hotels__item">
@@ -104,14 +104,22 @@
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="filter-hotels-group">
+              <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels__title">Стоимость, ₽:</legend>
-                  <p class="filter__range-views">
+
+                <p class="filter__range-views">
+                  <label class="visually-hidden" for="minprice">Минимальная цена</label>
+                  <input class="field-control" type="number" id="minprice" name="min" placeholder="0">
+                  <input class="field-control" type="number" id="maxprice" name="max" placeholder="9000">
+                  <label class="visually-hidden" for="maxprice">Максимальная цена</label>
+                </p>
+
+                  <!-- <p class="filter__range-views">
                     <label for="minprice"><span class="visually-hidden">Минимальная цена.</span></label>
                     <input type="number" id="minprice" name="min" placeholder="0">
                     <label for="maxprice"><span class="visually-hidden">Максимальная цена.</span></label>
                     <input type="number" id="maxprice" name="max" placeholder="9000">
-                  </p>
+                  </p> -->
                   <!-- Не особо понял пока, но видимо надо так -->
                   <div class="filter__range-control">
                     <button class="filter__control-btn" type="button">

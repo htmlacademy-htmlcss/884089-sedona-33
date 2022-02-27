@@ -475,6 +475,10 @@ fill: #756257;
   line-height: 23px;
 }
 
+.filter__header {
+  margin-block-end: 45px;
+}
+
 .filter .container {
   background-image: url("../images/bg-fone/catalog-background.jpg");
   background-position: center;
@@ -497,6 +501,27 @@ fill: #756257;
 .sort .wrapper {
   display: flex;
   gap: 8px;
+}
+
+/* filte inputs */
+
+.filter__hotels-group {
+  border: none;
+}
+
+.field-control[type="number"] {
+padding-block-start: 15px;
+padding-block-end: 15px;
+padding-inline-start: 20px;
+border: 2px solid #ffffff;
+margin-inline-end: -5px;
+background-color: transparent;
+border-radius: 4px 0 0 4px;
+width: 143px;
+}
+
+.field-control[type="number"]:nth-of-type(2) {
+  border-radius: 0 4px 4px 0;
 }
 
 /* title */
