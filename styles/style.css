@@ -1485,3 +1485,9 @@ margin-block-end: 64px;
   display: block;
 }
 
+/* hidden modal */
+
+.modal-cotainer--close {
+  display: none;
+}
+
