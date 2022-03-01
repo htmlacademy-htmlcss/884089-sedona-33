@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Каталог Седона</title>
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
@@ -63,64 +64,82 @@
                     <span class="visually-hidden">На главную.</span>
                     <svg class="filter__icon" width="12" height="12" viewbox="0 0 12 12" fill="none"><path d="M6 .3 0 5.8V12h12V5.8L6 .3ZM11 11H1V6.2l5-4.5 5 4.5V11Z"/><path d="M4 10h1V7.5h2V10h1V6.5H4V10Z"/></svg>
                   </a>
-                </li><!--:before стрелка-->
+                </li>
                 <li class="filter__item">
-                  <a class="filter__link" href="catalog.html">Гостиницы</a>
+                  <a class="filter__link filter__link-arrow" href="catalog.html">Гостиницы</a>
                 </li>
               </ul>
             </header>
             <form class="filter__hotels" action="https://echo.htmlacademy.ru" method="post" oninput="min.value=mincost.value, max.value=maxcost.value">
-              <fieldset class="filter__hotels__group">
+              <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels__title">Инфраструктура:</legend>
                   <ul class="filter__hotels__list">
                     <li class="filter__hotels__item">
-                      <input class="filter__check" type="checkbox" name="swimmingpool" id="swim" checked>
-                      <label class="filter__control" for="swim">Бассейн</label>
+                      <label class="filter__control" for="swim">
+                        <input class="filter__check visually-hidden" type="checkbox" name="swimmingpool" id="swim" checked>
+                        <span class="filter__control-mark"></span>
+                        <span class="filter__control-name">Бассейн</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__check" type="checkbox" name="parking" id="parking" checked>
-                      <label class="filter__control" for="parking">Парковка</label>
+                      <label class="filter__control" for="parking">
+                      <input class="filter__check visually-hidden" type="checkbox" name="parking" id="parking" checked>
+                      <span class="filter__control-mark"></span>
+                      <span class="filter__control-name">Парковка</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__check" type="checkbox" name="wifi" id="wifi">
-                      <label class="filter__control" for="wifi">Wi-Fi</label>
+                      <label class="filter__control" for="wifi">
+                      <input class="filter__check visually-hidden" type="checkbox" name="wifi" id="wifi">
+                      <span class="filter__control-mark"></span>
+                      <span class="filter__control-name">Wi-Fi</span>
+                      </label>
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="filter__hotels__group">
+              <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels__title">Тип жилья:</legend>
                   <ul class="filter__hotels__list">
                     <li class="filter__hotels__item">
-                      <input class="filter__radio" type="radio" name="hotels-group" id="hosting" value="hosting" checked>
-                      <label class="filter__control" for="hosting">Гостиница</label>
+                      <label class="filter__control" for="hosting">
+                      <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="hosting" value="hosting" checked>
+                      <span class="filter__control-mark radio-style"></span>
+                      <span class="filter__control-name">Гостиница</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__radio" type="radio" name="hotels-group" id="motel" value="motel">
-                      <label class="filter__control" for="motel">Мотель</label>
+                      <label class="filter__control" for="motel">
+                      <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="motel" value="motel">
+                      <span class="filter__control-mark radio-style"></span>
+                      <span class="filter__control-name">Мотель</span>
+                      </label>
                     </li>
                     <li class="filter__hotels__item">
-                      <input class="filter__radio" type="radio" name="hotels-group" id="apartments" value="apartments">
-                      <label class="filter__control" for="apartments">Апартаменты</label>
+                      <label class="filter__control" for="apartments">
+                      <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="apartments" value="apartments">
+                      <span class="filter__control-mark radio-style"></span>
+                      <span class="filter__control-name">Апартаменты</span>
+                      </label>
                     </li>
                   </ul>
               </fieldset>
-              <fieldset class="filter-hotels-group">
+              <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels__title">Стоимость, ₽:</legend>
                   <p class="filter__range-views">
-                    <label for="minprice"><span class="visually-hidden">Минимальная цена.</span></label>
-                    <input type="number" id="minprice" name="min" placeholder="0">
-                    <label for="maxprice"><span class="visually-hidden">Максимальная цена.</span></label>
-                    <input type="number" id="maxprice" name="max" placeholder="9000">
+                    <label class="visually-hidden" for="minprice">Минимальная цена</label>
+                    <input class="field-control" type="number" id="minprice" name="min" placeholder="0" value="0">
+                    <input class="field-control" type="number" id="maxprice" name="max" placeholder="9000" value="9000">
+                    <label class="visually-hidden" for="maxprice">Максимальная цена</label>
                   </p>
-                  <!-- Не особо понял пока, но видимо надо так -->
-                  <div class="filter__range-control">
-                    <button class="filter__control-btn" type="button">
-                      <span class="visually-hidden">Минимальное значение.</span>
-                    </button>
-                    <div class="filter__range-line"></div>
-                    <button class="filter__control-btn" type="button">
-                      <span class="visually-hidden">Максимальное значение.</span>
-                    </button>
+                  <div class="filter__range-line">
+                    <div class="filter__range-bar" style="width: 227px; left: 0;">
+                      <button class="filter__range-toggle min-toggle" type="button">
+                        <span class="visually-hidden">Минимальное значение.</span>
+                      </button>
+                      <button class="filter__range-toggle max-toggle" type="button">
+                        <span class="visually-hidden">Максимальное значение.</span>
+                      </button>
+                    </div>
                   </div>
               </fieldset>
               <div class="wrapper">
@@ -136,18 +155,18 @@
           <div class="container-inner">
             <h2 class="visually-hidden">Результат сортировки.</h2>
             <span class="sort-result">Найдено гостиниц: <span class="sort__count">38</span></span>
-            <select сlass="sort__selector-control" area-label="Сортировка">
+            <select>
               <option value="bigcost">Сначала дешёвые</option>
               <option value="lowcost">Сначала дорогие</option>
             </select>
             <div class="wrapper">
-              <a href="#" class="sort__btn sort__btn-tile sort__btn--current">
+              <a href="#" class="sort__btn sort__btn-genstyle sort__btn-tile sort__btn--current">
                 <span class="visually-hidden">Показать карточки.</span>
               </a>
-              <a href="#" class="sort__btn sort__btn-slide">
+              <a href="#" class="sort__btn sort__btn-genstyle sort__btn-slide">
                 <span class="visually-hidden">Показать плитку.</span>
               </a>
-              <a href="#" class="sort__btn sort__btn-list">
+              <a href="#" class="sort__btn sort__btn-genstyle sort__btn-list">
                 <span class="visually-hidden">Показать список.</span>
               </a>
             </div>
@@ -278,7 +297,7 @@
             </ul>
             <div class="wrapper">
               <span class="pagination__result">Гостиниц на странице:</span>
-              <select сlass="pagination__selector-control" area-label="Группировка">
+              <select>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>

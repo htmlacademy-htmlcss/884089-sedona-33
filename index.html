@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.png">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
@@ -192,5 +193,49 @@
         </div>
       </div>
     </footer>
+    <div class="modal-cotainer modal-cotainer--close">
+      <div class="modal modal-auth">
+        <button class="modal__close-button">
+          <span class="visually-hidden">Закрыть.</span>
+        </button>
+        <section class="modal__content">
+          <h2 class="modal__title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-auth__form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="wrapper form-grid-wrapper">
+            <label class="modal-auth__label" for="inday">Дата заезда:</label>
+            <div class="modal-auth__group">
+              <input class="modal-auth__field modal-auth__field-date" name="inday" id="inday" type="text" value="27 апреля 2020">
+              <span class="modal-auth__description modal-auth__description-in">Мы не можем отправить вас в прошлое.</span>
+            </div>
+            <label class="modal-auth__label" for="outday">Дата выезда:</label>
+            <div class="modal-auth__group">
+                <input class="modal-auth__field modal-auth__field-date" type="text" name="outday" id="outday" value="1 сентября 2021">
+              <span class="modal-auth__description">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+            <div class="modal-auth__group" style="grid-area: old;">
+              <label class="modal-auth__label label-old" for="oldman">Взрослые:</label>
+              <input class="modal-auth__field field-old" name="oldman" id="oldman" type="number" value="2">
+            </div>
+            <div class="modal-auth__group">
+              <span class="modal-auth__label modal-auth__label-tooltip">
+              <label class="modal-auth__label label-child" for="child">Дети:</label>
+              <span class="modal-auth__tooltip">
+                <button class="modal-auth__tooltip-toggle" type="button" aria-labelledby="tooltip-label"></button>
+                <span class="modal-auth__tooltip-text" role="tooltip" id="tooltip-label">
+                  Укажите количество детей,<br>
+                  которые будут с вами, возраст<br>
+                  которых от 6 до 18 лет. Дети<br>
+                  до 6 лет размещаются<br> бесплатно.
+                </span>
+              </span>
+              </span>
+              <input class="modal-auth__field field-child" type="number" value="1" name="children" id="child">
+            </div>
+            <button class="modal-auth__submit" type="submit">Найти</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
  </body>
 </html>
