@@ -868,10 +868,13 @@ font: inherit;
   border-radius: 4px;
 }
 
-.sort__btn-tile {
-  background-image: url(../images/svg-sort-icon/mode-tile.svg);
+.sort__btn-genstyle {
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.sort__btn-tile {
+  background-image: url(../images/svg-sort-icon/mode-tile.svg);
 }
 
 .sort__btn--current {
@@ -880,14 +883,10 @@ font: inherit;
 
 .sort__btn-slide {
   background-image: url(../images/svg-sort-icon/mode-slideshow.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .sort__btn-list {
   background-image: url(../images/svg-sort-icon/mode-list.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .sort__btn:hover {
