@@ -467,7 +467,8 @@ ul {
   text-align: center;
   background-color: #000000;
   color: #ffffff;
-  padding-block-end: 95px;
+  padding-block-start: 99px;
+  padding-block-end: 94px;
 }
 
 .catalog {
@@ -482,6 +483,7 @@ ul {
   background-color: #ffffff;
   background-image: none;
   color: #333333;
+  padding-block-start: 0;
 }
 
 .filter {
@@ -523,6 +525,10 @@ ul {
 
 .subscription {
   margin-block-end: 48px;
+}
+
+.subscription-index {
+  margin-block-end: 0px;
 }
 
 /* filter inputs */
@@ -681,6 +687,10 @@ ul {
 
 .subscription__title {
   color: #ffffff;
+  margin-block-end: 31px;
+}
+
+.subscription__title-catalog {
   margin-block-end: 45px;
 }
 
