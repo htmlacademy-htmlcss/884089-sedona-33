@@ -143,6 +143,7 @@ ul {
 
 .filter__breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .filter__item + .filter__item {
