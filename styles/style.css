@@ -53,6 +53,7 @@ body {
 img {
   max-width: 100%;
   vertical-align: middle;
+  object-fit: contain;
 }
 
 .main__container {
@@ -1561,6 +1562,7 @@ select:active {
   bottom: -630%;
   left: -80%;
   display: none;
+  white-space: normal;
 }
 
 .modal-auth__tooltip-toggle:hover + .modal-auth__tooltip-text,
