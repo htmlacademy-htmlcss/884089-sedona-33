@@ -178,25 +178,25 @@ ul {
   padding: 20px 17px;
 }
 
-.contacts__link {
+.footer__contacts-link {
   text-decoration: none;
   padding: 15px;
   padding-block-start: 30px;
 }
 
-.contacts__link:hover .contacts__tel {
+.footer__contacts-link:hover .footer__contacts-tel {
   color: #756257;
 }
 
-.contacts__link:focus .contacts__tel {
+.footer__contacts-link:focus .footer__contacts-tel {
   color: #756257;
 }
 
-.contacts__link:active .contacts__tel {
+.footer__contacts-link:active .footer__contacts-tel {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.contacts__link:focus {
+.footer__contacts-link:focus {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
@@ -321,65 +321,65 @@ ul {
   outline: 3px solid #83b3d3;
 }
 
-.socials__link {
+.footer__socials-link {
   display: block;
   padding-block-start: 8px;
 }
 
-.socials__link-fb {
+.footer__socials-link-fb {
   padding-inline-start: 10px;
 }
 
-.socials__link-yo {
+.footer__socials-link-yo {
   padding-inline-start: 10px;
 }
 
-.socials__icon {
+.footer__socials-icon {
   fill: #83b3d3;
 }
 
-.socials__link:hover .socials__icon {
+.footer__socials-link:hover .footer__socials-icon {
   fill: #68a2ca;
 }
 
-.socials__link:focus {
+.footer__socials-link:focus {
   outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 
-.socials__link:focus .socials__icon {
+.footer__socials-link:focus .footer__socials-icon {
   fill: #68a2ca;
 }
 
-.socials__link:active .socials__icon {
+.footer__socials-link:active .footer__socials-icon {
   fill: #68a2ca;
   opacity: 0.3;
 }
 
-.copyright__link {
+.footer__copyright-link {
   padding: 18px 22px;
   padding-block-start: 40px;
   padding-inline-end: 2px;
 }
 
-.copyright__icon {
+.footer__copyright-icon {
   fill: #000000;
 }
 
-.copyright__link:hover .copyright__icon {
+.footer__copyright-link:hover .footer__copyright-icon {
   fill: #756257;
 }
 
-.copyright__link:focus {
+.footer__copyright-link:focus {
   outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
-.copyright__link:focus .copyright__icon {
+.footer__copyright-link:focus .footer__copyright-icon {
   fill: #756257;
 }
 
-.copyright__link:active .copyright__icon {
+.footer__copyright-link:active .footer__copyright-icon {
   fill: rgba(117, 98, 87, 0.3);
 }
 
@@ -528,7 +528,7 @@ ul {
 }
 
 .subscription-index {
-  margin-block-end: 0px;
+  margin-block-end: 0;
 }
 
 /* filter inputs */
@@ -1007,18 +1007,18 @@ ul {
   padding-inline-end: 70px;
 }
 
-.socials__list {
+.footer__socials-list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.socials__item {
+.footer__socials-item {
   width: 40px;
   height: 40px;
   display: flex;
 }
 
-.contacts__tel {
+.footer__contacts-tel {
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
