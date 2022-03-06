@@ -45,7 +45,8 @@ body {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1039,7 +1040,8 @@ select {
   border-radius: 4px;
   background-color: #ffffff;
   padding: 12px 20px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-image: url("../images/group.svg");
   background-repeat: no-repeat;
   background-position: top 20px right 20px;
@@ -1409,6 +1411,9 @@ select:active {
 }
 
 .modal-auth__group:first-of-type {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-area: inday;
   width: 420px;
   justify-self: end;
@@ -1416,6 +1421,9 @@ select:active {
 }
 
 .modal-auth__group:nth-of-type(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
   grid-area: ouday;
   width: 420px;
   justify-self: end;
@@ -1423,6 +1431,9 @@ select:active {
 }
 
 .modal-auth__group:last-of-type {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
   justify-self: end;
   grid-area: child;
 }
@@ -1460,6 +1471,9 @@ select:active {
 }
 
 .modal-auth__submit {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-area: btn;
   background-color: #83b3d3;
   border-radius: 10px;
@@ -1575,4 +1589,3 @@ select:active {
 .modal-cotainer--close {
   display: none;
 }
-
