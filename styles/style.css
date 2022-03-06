@@ -344,13 +344,17 @@ ul {
   fill: #68a2ca;
 }
 
-.footer__socials-link:focus {
+.footer__socials-link:focus .footer__socials-icon {
+  fill: #68a2ca;
+}
+
+.footer__socials-item:focus-within {
   outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 
-.footer__socials-link:focus .footer__socials-icon {
-  fill: #68a2ca;
+.footer__socials-item:focus-within .footer__socials-link{
+  outline: 0;
 }
 
 .footer__socials-link:active .footer__socials-icon {
@@ -1089,7 +1093,7 @@ select:active {
   opacity: 0.6;
 }
 
-.catalog__card-image:focus {
+.catalog__card-link:focus .catalog__card-image {
   outline: 3px solid #83b3d3;
 }
 
