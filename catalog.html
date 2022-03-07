@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy:Каталог Седона</title>
-    <link rel="icon" href="favicon.icon">
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
@@ -11,9 +11,9 @@
       <div class="container">
         <nav class="navigation">
             <a class="navigation__logo__link" href="index.html">
-              <img class="navigation__logo" src="./images/logo.png" width="139" height="70" alt="Логотип Седона.">
+              <img class="img-responsive navigation__logo" src="./images/logo.png" width="139" height="70" alt="Логотип Седона.">
             </a>
-            <ul class="navigation__list navigation__list-main">
+            <ul class="list-reset  list-reset navigation__list navigation__list-main">
                 <li class="navigation__item">
                     <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
                 </li>
@@ -24,7 +24,7 @@
                     <a class="navigation__link" href="catalog.html">Гостиницы</a>
                 </li>
             </ul>
-            <ul class="navigation__list navigation-user">
+            <ul class="list-reset navigation__list navigation-user">
                 <li class="navigation__item">
                     <a class="navigation__link navigation__link-icon" href="#">
                     <svg class="navigation__icon" width="20" height="19" viewbox="0 0 20 19" fill="none">
@@ -56,7 +56,7 @@
           <div class="container-inner">
             <header class="filter__header">
               <h1 class="filter__title">Гостиницы Седоны</h1>
-              <ul class="filter__breadcrumbs">
+              <ul class="list-reset filter__breadcrumbs">
                 <li class="filter__item">
                   <a class="filter__link" href="index.html">
                     <span class="visually-hidden">На главную.</span>
@@ -71,7 +71,7 @@
             <form class="filter__hotels" action="https://echo.htmlacademy.ru" method="post" oninput="min.value=mincost.value, max.value=maxcost.value">
               <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels-title">Инфраструктура:</legend>
-                  <ul class="filter__hotels__list">
+                  <ul class="list-reset filter__hotels__list">
                     <li class="filter__hotels__item">
                       <label class="filter__control" for="swim">
                         <input class="filter__check visually-hidden" type="checkbox" name="swimmingpool" id="swim" checked>
@@ -97,7 +97,7 @@
               </fieldset>
               <fieldset class="filter__hotels-group">
                 <legend class="filter__hotels-title">Тип жилья:</legend>
-                  <ul class="filter__hotels__list">
+                  <ul class="list-reset filter__hotels__list">
                     <li class="filter__hotels__item">
                       <label class="filter__control" for="hosting">
                       <input class="filter__radio visually-hidden" type="radio" name="hotels-group" id="hosting" value="hosting" checked>
@@ -153,7 +153,7 @@
           <div class="container-inner">
             <h2 class="visually-hidden">Результат сортировки.</h2>
             <span class="sort-result">Найдено гостиниц: <span class="sort__count">38</span></span>
-            <select>
+            <select class="select-style sort__select">
               <option value="bigcost">Сначала дешёвые</option>
               <option value="lowcost">Сначала дорогие</option>
             </select>
@@ -174,10 +174,10 @@
       <section class="catalog">
         <div class="container">
           <div class="container-inner">
-            <ul class="catalog__list">
+            <ul class="list-reset catalog__list">
               <li class="catalog__card">
                 <a href="#" class="catalog__card-link">
-                  <img class="catalog__card-image" src="images/catalog/hotel-1.jpg" width="300" height="206" alt="Фотография отеля">
+                  <img class="img-responsive catalog__card-image" src="images/catalog/hotel-1.jpg" width="300" height="206" alt="Фотография отеля">
                   <h3 class="catalog__card-title">Amara Resort & Spa</h3>
                 </a>
                 <div class="grid-container catalog__card-grid">
@@ -200,7 +200,7 @@
               </li>
               <li class="catalog__card">
                 <a href="#" class="catalog__card-link">
-                  <img class="catalog__card-image" src="images/catalog/hotel-2.jpg" width="300" height="206" alt="Фотография отеля">
+                  <img class="img-responsive catalog__card-image" src="images/catalog/hotel-2.jpg" width="300" height="206" alt="Фотография отеля">
                   <h3 class="catalog__card-title">Desert Quail Inn</h3>
                 </a>
                 <div class="grid-container catalog__card-grid">
@@ -222,7 +222,7 @@
               </li>
               <li class="catalog__card">
                 <a href="#" class="catalog__card-link">
-                  <img class="catalog__card-image" src="images/catalog/hotel-3.jpg" width="300" height="206" alt="Фотография отеля">
+                  <img class="img-responsive catalog__card-image" src="images/catalog/hotel-3.jpg" width="300" height="206" alt="Фотография отеля">
                   <h3 class="catalog__card-title">Villas at Poco Diablo</h3>
                 </a>
                 <div class="grid-container catalog__card-grid">
@@ -243,7 +243,7 @@
               </li>
               <li class="catalog__card">
                 <a href="#" class="catalog__card-link">
-                  <img class="catalog__card-image" src="images/catalog/hotel-4.jpg" width="300" height="206" alt="Фотография отеля">
+                  <img class="img-responsive catalog__card-image" src="images/catalog/hotel-4.jpg" width="300" height="206" alt="Фотография отеля">
                   <h3 class="catalog__card-title">GreenTree Inn</h3>
                 </a>
                 <div class="grid-container catalog__card-grid">
@@ -271,7 +271,7 @@
         <h2 class="visually-hidden">Пагинация страниц.</h2>
         <div class="container">
           <div class="container-inner">
-            <ul class="pagination__list">
+            <ul class="list-reset pagination__list">
               <li class="pagination__item">
                 <a href="#" class="pagination__link pagination__link--сurrent">1</a>
               </li>
@@ -295,7 +295,7 @@
             </ul>
             <div class="wrapper">
               <span class="pagination__result">Гостиниц на странице:</span>
-              <select>
+              <select class="select-style">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -321,7 +321,7 @@
     <footer class="main-footer footer">
       <div class="container footer-container">
         <div class="wrapper">
-          <ul class="footer__socials-list">
+          <ul class="list-reset footer__socials-list">
             <li class="footer__socials-item">
               <a class="footer__socials-link footer__socials-link-tw" href="https://twitter.com/htmlacademy_ru">
                 <svg class="footer__socials-icon" width="18" height="15" viewbox="0 0 18 15" fill="none">
