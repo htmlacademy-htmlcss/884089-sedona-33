@@ -344,13 +344,17 @@ ul {
   fill: #68a2ca;
 }
 
-.footer__socials-link:focus {
+.footer__socials-link:focus .footer__socials-icon {
+  fill: #68a2ca;
+}
+
+.footer__socials-item:focus-within {
   outline: 3px solid #83b3d3;
   border-radius: 10px;
 }
 
-.footer__socials-link:focus .footer__socials-icon {
-  fill: #68a2ca;
+.footer__socials-item:focus-within .footer__socials-link{
+  outline: 0;
 }
 
 .footer__socials-link:active .footer__socials-icon {
@@ -469,7 +473,7 @@ ul {
   text-align: center;
   background-color: #000000;
   color: #ffffff;
-  padding-block-start: 99px;
+  padding-block-start: 97px;
   padding-block-end: 94px;
 }
 
@@ -819,7 +823,10 @@ ul {
   padding: 0;
   margin-inline-start: -5px;
   cursor: pointer;
-  letter-spacing: -2px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .subscription__btn:hover {
@@ -842,10 +849,12 @@ ul {
   background-color: #83b3d3;
   border-radius: 4px;
   color: #ffffff;
-  font-size: 20px;
-  line-height: 26px;
   margin-inline-start: 220px;
   margin-block-end: 30px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .catalog__btn:hover {
@@ -959,13 +968,14 @@ ul {
   border-radius: 4px;
   width: 140px;
   color: #ffffff;
-  font-size: 16px;
-  line-height: 21px;
   text-align: center;
   padding-block-start: 10px;
   padding-block-end: 10px;
   cursor: pointer;
-  letter-spacing: -1px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog__card-btn:hover {
@@ -1089,7 +1099,7 @@ select:active {
   opacity: 0.6;
 }
 
-.catalog__card-image:focus {
+.catalog__card-link:focus .catalog__card-image {
   outline: 3px solid #83b3d3;
 }
 
@@ -1117,14 +1127,15 @@ select:active {
   background-color: #756257;
   color: #ffffff;
   text-align: center;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
   text-transform: uppercase;
   border-radius: 4px;
   padding-block-start: 10px;
   padding-block-end: 10px;
   width: 133px;
+  font: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog__card-info:hover {
