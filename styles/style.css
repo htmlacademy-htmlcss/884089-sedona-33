@@ -53,8 +53,8 @@ body {
 
 img {
   max-width: 100%;
-  vertical-align: middle;
   object-fit: contain;
+  vertical-align: middle;
 }
 
 .main__container {
@@ -98,6 +98,11 @@ ul {
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
+}
+
+.advantages__description-first {
+  max-width: 224px;
+  margin: auto;
 }
 
 /* top navigation */
@@ -370,6 +375,7 @@ ul {
 
 .footer__copyright-icon {
   fill: #000000;
+  margin-block-start: 3px;
 }
 
 .footer__copyright-link:hover .footer__copyright-icon {
