@@ -105,6 +105,11 @@ ul {
   margin: auto;
 }
 
+.advantages__description-second {
+  max-width: 250px;
+  margin: auto;
+}
+
 /* top navigation */
 
 .main-header {
