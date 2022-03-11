@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  min-width: 1280px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -468,12 +467,13 @@ body {
 }
 
 .poster__logo {
-  margin-bottom: 145px;
+  margin-bottom: 75px;
 }
 
 .poster .wrapper {
   background-color: #ffffff;
   padding-block-end: 80px;
+  padding-block-start: 70px;
 }
 
 .offer .container {
