@@ -472,8 +472,8 @@ body {
 
 .poster .wrapper {
   background-color: #ffffff;
-  padding-block-end: 81px;
-  padding-block-start: 70px;
+  padding-block-end: 82px;
+  padding-block-start: 67px;
 }
 
 .offer .container {
@@ -711,7 +711,7 @@ body {
   line-height: 36px;
   color: #000000;
   margin-block-start: -4px;
-  margin-block-end: 28px;
+  margin-block-end: 29px;
 }
 
 .subscription__title {
