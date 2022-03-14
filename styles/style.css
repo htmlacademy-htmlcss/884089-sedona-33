@@ -462,24 +462,24 @@ body {
   text-align: center;
   padding-block-start: 52px;
   background-repeat: repeat-x, no-repeat;
-  background-position: 0 60%, center -3px;
+  background-position: 0 429px, center -3px;
   background-color: #4d4a4a;
 }
 
 .poster__logo {
-  margin-bottom: 75px;
+  margin-bottom: 77px;
 }
 
 .poster .wrapper {
   background-color: #ffffff;
-  padding-block-end: 80px;
+  padding-block-end: 81px;
   padding-block-start: 70px;
 }
 
 .offer .container {
   text-align: center;
   padding-block-start: 94px;
-  padding-block-end: 90px;
+  padding-block-end: 91px;
 }
 
 .container-subscription {
@@ -796,6 +796,10 @@ body {
   font-size: 22px;
   line-height: 26px;
   margin-block-end: 59px;
+}
+
+.offer__description {
+  margin-block-end: 58px;
 }
 
 .subscription__description {
