@@ -458,11 +458,11 @@ body {
 }
 
 .poster-container {
-  background-image: url("../images/poster-mask.png"), url("../images/bg-fone/index-background.jpg");
+  background-image: url("../images/bg-fone/index-background.jpg");
   text-align: center;
   padding-block-start: 52px;
-  background-repeat: repeat-x, no-repeat;
-  background-position: 0 429px, center 0;
+  background-repeat: no-repeat;
+  background-position: center 0;
   background-color: #4d4a4a;
 }
 
@@ -474,6 +474,14 @@ body {
   background-color: #ffffff;
   padding-block-end: 82px;
   padding-block-start: 67px;
+  position: relative;
+}
+
+.poster .wrapper::before {
+  position: absolute;
+  content: url("../images/poster-mask.png");
+  left: 0;
+  top: -57px;
 }
 
 .offer .container {
